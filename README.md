@@ -18,6 +18,6 @@
 
 ![how_to_use_vs2017](/Data/img/how_to_use_cb.gif)
 
-### paste.ubuntu.com使用 ###
+### paste.ubuntu.com 使用 ###
 
 ![how_to_use_vs2017](/Data/img/how_to_use_paste.gif)
