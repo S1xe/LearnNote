@@ -4,20 +4,22 @@
 
 
 
-### C++IDE推荐
+### C++IDE推荐 ###
 
-![part_C++IDE_list](/Data/img/part_C++IDE_list.png)
+![C++IDE推荐](/Data/img/part_C++IDE_list.png)
 
-### VS2017 使用###
+### VS2017 使用 ###
 
+![VS2017 使用](/Data/img/how_to_use_vs2017.gif)
 
+### Code::Blocks 使用 ### 
 
-![how_to_use_vs2017](/Data/img/how_to_use_vs2017.gif)
-
-### Code::Blocks 使用### 
-
-![how_to_use_vs2017](/Data/img/how_to_use_cb.gif)
+![Code::Blocks 使用](/Data/img/how_to_use_cb.gif)
 
 ### paste.ubuntu.com 使用 ###
 
-![how_to_use_vs2017](/Data/img/how_to_use_paste.gif)
+![paste.ubuntu.com 使用](/Data/img/how_to_use_paste.gif)
+
+### 引用github.com图片 ###
+
+![引用github.com图片](/Data/img/how_to_refer_picture.gif)
