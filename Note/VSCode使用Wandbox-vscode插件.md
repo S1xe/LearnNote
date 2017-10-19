@@ -89,11 +89,49 @@ int main() {
 
 #### 有关多文件编译
 
-截止至2017-10-17,wandbox-vscode的版本为2.2.1,
+- 编写头文件代码
 
-此前已提issue提交多文件的bug,作者已处理,暂未发布新版本
+`Hello.hpp`代码如下
 
-等新版本发布之后该文章再做更新
+```c++
+#ifndef HELLO_HPP
+#define HELLO_HPP
+
+int fun() {
+    return 0;
+}
+
+#endif
+```
+
+- 编写主函数文件代码
+
+`main.cpp`代码如下
+
+```c++
+#include <iostream>
+#include "Hello.hpp"
+using namespace std;
+
+int main() {
+    cout << "Hello World" << endl;
+    cout << fun() << endl;
+    return 0;
+}
+```
+
+- 设置提交多文件
+
+    `F1` - `Wandbox:Set Options` - `Select a add file` - 选中`Hello.hpp` 
+
+- 提交编译
+
+    `F1` -> `Wandbox:Run`
+
+完整过程如下图所示
+
+![wandbox_set_input](https://raw.githubusercontent.com/S1xe/LearnNote/master/Data/img/wandbox_set_mutli_input.gif)
+
 
 #### 实用命令
 
@@ -106,5 +144,10 @@ int main() {
 `Wandbox:Clear`
 
 
-**未完待续**
+#### 写在最后
+
+由于一些`wandbox.org`的缘故,即编译选项相对单一(只执行一条g++编译命令),不能比较完全实现类似于本地编译多文件的功能(如,Makefile处理多文件编译),但是也可以通过一些另类的include方法实现多文件编译.
+
+综上,虽然有些小限制,但是这个网站和插件还是相对方便于使用者
     
+如有问题,请及时反馈~~
