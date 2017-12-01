@@ -8,7 +8,8 @@
 #include <thread>
 
 // use the std::lock_guard and std::mutex
-struct Counter {
+struct Counter
+{
     int value;
     std::mutex mutex;
     void increment()
@@ -21,30 +22,16 @@ struct Counter {
         std::lock_guard<std::mutex> lock(mutex);
         --value;
     }
-    int get()
-    {
-        return value;
-    }
+    int get() { return value; }
 };
 
 // use the std::atomic simplify the code
-struct AtomicCounter {
+struct AtomicCounter
+{
     std::atomic<int> value;
-    void increment()
-    {
-        ++value;
-    }
-    void decrement()
-    {
-        --value;
-    }
-    int get()
-    {
-        return value.load();
-    }
+    void increment() { ++value; }
+    void decrement() { --value; }
+    int get() { return value.load(); }
 };
 
-int main()
-{
-    return 0;
-}
+int main() { return 0; }

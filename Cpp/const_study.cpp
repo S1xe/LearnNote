@@ -21,10 +21,7 @@ void funT(const int &A, const int &B)
 //
 //}
 
-void test(const int &i)
-{
-    printf("%p\n", &i);
-}
+void test(const int &i) { printf("%p\n", &i); }
 int main()
 {
     //如果引用参数是const，则编译器将在下面两种情况下生成临时变量：

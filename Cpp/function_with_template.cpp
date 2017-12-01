@@ -38,10 +38,7 @@ void testfun(T (*f)(T))
 }
 
 // function to test
-void fun1()
-{
-    std::cout << "Hello World!\n";
-}
+void fun1() { std::cout << "Hello World!\n"; }
 
 int fun2()
 {

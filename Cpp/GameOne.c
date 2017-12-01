@@ -21,7 +21,8 @@ Output2:NO
 int bitJudge(int m)
 {
     for (int i = 0;; i++) {
-        if (m >> i == 0) return i;
+        if (m >> i == 0)
+            return i;
     }
 }
 int main()
@@ -29,7 +30,8 @@ int main()
     char s;
     int n = 0;
     while ((s = getchar()) != EOF) {
-        if (s == '\n') n++;
+        if (s == '\n')
+            n++;
     }
     fprintf(stdout, "%d\n", n);
 
