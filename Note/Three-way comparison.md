@@ -1,5 +1,5 @@
 
->### [翻译]Three-way comparison
+### [翻译]Three-way comparison
 
 原文地址:[Three-way_comparison](http://en.cppreference.com/w/cpp/language/operator_comparison#Three-way_comparison)
 
@@ -8,9 +8,11 @@
 ---
 
 > The three-way comparison operator expressions have the form
+>
 >`lhs<=>rhs`
+>
 >The expression returns an object such that:
-
+>
 >- `(a <=> b) < 0` if `lhs` < `rhs`
 >
 >- `(a <=> b) > 0` if `lhs` > `rhs`
@@ -25,12 +27,9 @@
 
 - 如果两者相等,返回0
 
-
 >If one of the operands is of type bool and the other is not, the program is ill-formed.
 
 若其中一个为`bool`类型,另一个不是,那么程序是`ill-formed`的.
-
-
 
 >If both operands have arithmetic types, the usual arithmetic conversions are applied to the operands, and then
 >
@@ -81,8 +80,6 @@
 
 若操作数具有相同的枚举类型E,则将会把操作数转换成E的基本类型后进行比较.
 
-
-
 >If at least one of the operands is a `pointer` or `pointer-to-member`, `array-to-pointer conversions`, `derived-to-base pointer conversions`, `function pointer conversions`, and `qualification conversions` are applied as necessary to convert both operands to the same pointer type.
 >
 >If the resulting pointer type is a function pointer, a `pointer to member`, or `std::nullptr_t`, `p <=> q` returns a prvalue of type `std::strong_equality`:  ( since C++20 )
@@ -124,7 +121,6 @@
 
 - 若两指针的比较是未指定的,则结果是未指定的(例如，当不指向同一对象或数组时)
 
-
 >In overload resolution against user-defined operators, for pointer or enumeration type T, the following function signature participates in overload resolution:
 >
 >`R operator<=>(T, T);`
@@ -150,7 +146,6 @@
 >If both of the operands are arrays, three-way comparison is ill-formed except when comparing class members of array type
 
 若两操作数为数组,若程序中使用三元比较符将是`ill-formed`的,除非比较的是类的数组成员.
-
 
 ```c++
 unsigned int i = 1;
